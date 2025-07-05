@@ -1,15 +1,15 @@
 {
-  "name": "starter-code",
+  "name": "space-tourism",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:watch": "sass assets/scss/style.scss assets/css/style.css --watch",
+    "sass:build": "sass assets/scss/style.scss assets/css/style.css"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "sass": "^1.89.2"
+    "sass": "^1.75.0"
   }
 }
