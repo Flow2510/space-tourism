@@ -60,9 +60,9 @@ html{
     gap: 2rem;
     font-size: 1.2rem;
     text-transform: uppercase;
-    text-wrap: nowrap;
 
-    @media screen and (min-width:600px) {
+
+    @media screen and (min-width:630px) {
         padding: 0rem 0 2rem 2rem;
     }
 
@@ -70,34 +70,73 @@ html{
         margin-top: 2rem;
     } 
 
-    &__nav{
-        display: none;   
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 2rem 0 2rem 4rem;
-        max-width: 700px;
-        
-        @media screen and (min-width:600px) {
+    &__overlay{
+        position: absolute;
+        display: none;
+        content: "";
+        width: 70%;
+        height: 100%;
+        top: 0;
+        left: 30%;
+        backdrop-filter: blur(25px); /* Flou propre et uniforme */
+        background-color: rgba(99, 99, 99, 0.1); /* Teinte foncée en plus si tu veux */
+        z-index: 10;
+    }
+
+    &__nav{ 
+        position: absolute; 
+        display: none;
+        width: 70%;
+        height: 100vh;
+        left: 30%;
+        top: 0;
+        z-index: 100;
+        padding-top: 5rem;
+ 
+        @media screen and (min-width:630px) {
             display: flex;
+            position: initial;
             justify-content: end;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem 0;
+            max-width: 700px;
+            height: auto;
         }
     }
 
     &__list{
-        display: flex;
         list-style-type: none;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        z-index: 100;
+        padding: 1rem;
+        
+        @media screen and (min-width:630px) {
+            flex-direction: row;
+            padding: 0;        
+        }
+    }
+
+    &__close{
+        display: none;
+        z-index: 101;
     }
 
     &__link{
         color: white;
         text-decoration: none;
         padding: 2rem 1rem;
+
+        & b{
+            margin-right: 0.3rem;
+        }
     }
 
     &__hamburger{
 
-        @media screen and (min-width:600px) {
+        @media screen and (min-width:630px) {
             display: none;
         }
     }
@@ -127,6 +166,7 @@ html{
             color: white;
             font-size: 5rem;
             font-weight: 400;
+            word-break: break-all;
         }
 
         &-text{
