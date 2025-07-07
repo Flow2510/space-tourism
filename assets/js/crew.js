@@ -54,7 +54,6 @@ crewMembers.forEach((_, index) => {
         changeContent();
     })
     dotsContainer.appendChild(dot);
-
 })
 
 function changeDot() {	//  fonction pour enlever la classe a tous les dot et met le dot_selected par rapport a l'index
