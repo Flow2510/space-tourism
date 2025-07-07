@@ -132,4 +132,32 @@ html {
   }
 }
 
+.crew {
+  text-align: center;
+  padding: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+.crew__content {
+  padding: 1rem 0;
+}
+.crew__dots-wrapper {
+  display: flex;
+  gap: 0.8rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.crew__dot {
+  height: 12px;
+  width: 12px;
+  background-color: rgba(210, 216, 249, 0.356);
+  border-radius: 10000px;
+}
+.crew__dot-selected {
+  background-color: white;
+}
+.crew__image {
+  width: 100%;
+}
+
 /*# sourceMappingURL=crew.css.map */

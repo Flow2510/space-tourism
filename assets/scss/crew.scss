@@ -141,3 +141,36 @@ html{
         }
     }
 }
+
+.crew{
+    text-align: center;
+    padding: 1rem;
+    max-width: 400px;
+    margin: auto;
+
+    &__content{
+        padding: 1rem 0;
+    }
+
+    &__dots-wrapper{
+        display: flex;
+        gap: 0.8rem;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    &__dot{
+        height: 12px;
+        width: 12px;
+        background-color: rgba(210, 216, 249, 0.356);
+        border-radius: 10000px;
+
+        &-selected{
+            background-color: white;
+        }
+    }
+
+    &__image{
+        width: 100%;
+    }
+}
