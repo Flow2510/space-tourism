@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "sass assets/scss/style.scss assets/css/style.css --watch",
-    "sass:build": "sass assets/scss/style.scss assets/css/style.css"
+    "sass:main": "sass assets/scss/main.scss assets/css/main.css",
+    "sass:crew": "sass assets/scss/crew.scss assets/css/crew.css",
+    "sass:destination": "sass assets/scss/destination.scss assets/css/destination.css",
+    "sass:technology": "sass assets/scss/technology.scss assets/css/technology.css",
+    "sass": "npm run sass:main && npm run sass:crew && npm run sass:destination && npm run sass:technology",
+    "sass:watch": "sass --watch assets/scss/main.scss:assets/css/main.css assets/scss/crew.scss:assets/css/crew.css assets/scss/destination.scss:assets/css/destination.css assets/scss/technology.scss:assets/css/technology.css"
   },
   "author": "",
   "license": "ISC",
