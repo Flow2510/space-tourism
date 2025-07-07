@@ -138,9 +138,6 @@ html {
   max-width: 400px;
   margin: auto;
 }
-.crew__content {
-  padding: 1rem 0;
-}
 .crew__dots-wrapper {
   display: flex;
   gap: 0.8rem;
@@ -152,6 +149,7 @@ html {
   width: 12px;
   background-color: rgba(210, 216, 249, 0.356);
   border-radius: 10000px;
+  cursor: pointer;
 }
 .crew__dot-selected {
   background-color: white;

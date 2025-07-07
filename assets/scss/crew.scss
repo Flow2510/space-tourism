@@ -148,10 +148,6 @@ html{
     max-width: 400px;
     margin: auto;
 
-    &__content{
-        padding: 1rem 0;
-    }
-
     &__dots-wrapper{
         display: flex;
         gap: 0.8rem;
@@ -164,6 +160,7 @@ html{
         width: 12px;
         background-color: rgba(210, 216, 249, 0.356);
         border-radius: 10000px;
+        cursor: pointer;
 
         &-selected{
             background-color: white;
